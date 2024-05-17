@@ -36,8 +36,7 @@ export default function Retailer_Registration(props) {
         console.log('User account created & signed in!');
         firestore()
           .collection('Retailer')
-          .doc(userCredential.user.uid)
-          .set({
+          .add({
             BusinessName: businessName,
             Gst_No: gstNo,
             Address: address,
