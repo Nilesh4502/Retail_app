@@ -12,10 +12,12 @@ function HomeScreen(props) {
         <Background>
             <View style={styles.container}>
                 <Text style={styles.title}>Retail App</Text>
+                <View style={{justifyContent: "space-evenly" }}>
                 <Btn bgColor={darkgreen} btnLabel="Retailer Register" textColour='white' Press={() => props.navigation.navigate("Retailer_Register")} />
                 <Btn bgColor="white" btnLabel="Distributer Register" textColour={darkgreen} Press={() => props.navigation.navigate("Distributor_register")} />
                 <Btn bgColor={darkgreen} btnLabel="Retailer Login" textColour='white' Press={() => props.navigation.navigate("Retailer_login")} />
                 <Btn bgColor="white" btnLabel="Distributer Login" textColour={darkgreen} Press={() => props.navigation.navigate("Distributor_login")} />
+                </View>
             </View>
         </Background>
     );

@@ -11,6 +11,7 @@ function Btn({ bgColor, btnLabel, textColour, Press }) {
                 borderRadius: 100,
                 alignItems: 'center',
                 width: 350,
+                marginBottom:10,
                 paddingVertical: 5,
                 marginVertical: 10
             }}>

@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView,KeyboardAvoidingView } from 'react-native';
 import React, { useState }  from 'react';
 import Background from './Background';
 import { darkgreen } from './components/constants';
@@ -83,6 +83,11 @@ export default function Retailer_Registration(props) {
 // };
   return (
     <Background>
+    <KeyboardAvoidingView
+        style={styles.container}
+        behavior="position"
+        enabled
+      >
       <View style={styles.container}>
         <Text style={styles.title}>Retailer Registration</Text>
         <ScrollView contentContainerStyle={styles.scrollViewContent}>
@@ -105,6 +110,7 @@ export default function Retailer_Registration(props) {
           </View>
         </ScrollView>
       </View>
+      </KeyboardAvoidingView>
     </Background>
   );
 }
